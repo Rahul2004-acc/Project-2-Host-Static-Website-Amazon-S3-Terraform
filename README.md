@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Static Website Hosting on Amazon S3 using Terraform
 
 This project demonstrates how to host a static website on Amazon S3 using Terraform for Infrastructure as Code.
@@ -248,3 +249,7 @@ Created as part of Project 2: Host a Static Website on Amazon S3
 ---
 
 **Last Updated**: 2024
+=======
+# Host-Static-Website-Amazon-S3-Terraform
+Hosting a static website on amazon S3 using terraform
+>>>>>>> 87cbfe94c2c4a3a8fe4c0baf6465833389883792
