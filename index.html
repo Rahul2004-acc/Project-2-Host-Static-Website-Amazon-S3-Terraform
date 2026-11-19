@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Website - AWS S3 Hosting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Welcome to My Static Website</h1>
+            <p class="subtitle">Hosted on Amazon S3 using Terraform</p>
+        </header>
+
+        <main>
+            <section class="intro">
+                <h2>About This Project</h2>
+                <p>This is a simple static website hosted on <strong>Amazon S3</strong>. The infrastructure is managed using <strong>Terraform</strong>, making it reproducible and version-controlled.</p>
+            </section>
+
+            <section class="features">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>✅ Hosted on Amazon S3</li>
+                    <li>✅ Infrastructure as Code (Terraform)</li>
+                    <li>✅ Public read access enabled</li>
+                    <li>✅ Automatic index.html serving</li>
+                    <li>✅ Cost-effective hosting</li>
+                    <li>✅ High availability and durability</li>
+                </ul>
+            </section>
+
+            <section class="architecture">
+                <h2>Architecture Overview</h2>
+                <div class="arch-box">
+                    <p><strong>Components Used:</strong></p>
+                    <ul>
+                        <li>AWS S3 Bucket - For storing static files</li>
+                        <li>S3 Website Configuration - To enable static hosting</li>
+                        <li>S3 Bucket Policy - To allow public read access</li>
+                        <li>Terraform - Infrastructure management</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="terraform-info">
+                <h2>Terraform Configuration</h2>
+                <p>This project uses Terraform to manage:</p>
+                <ul>
+                    <li>S3 bucket creation and configuration</li>
+                    <li>Website hosting settings</li>
+                    <li>Public access permissions</li>
+                    <li>File uploads (HTML, CSS)</li>
+                </ul>
+            </section>
+
+            <section class="deployment">
+                <h2>Deployment Steps</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <p><strong>Initialize Terraform:</strong> <code>terraform init</code></p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <p><strong>Plan:</strong> <code>terraform plan</code></p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <p><strong>Apply:</strong> <code>terraform apply</code></p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <p><strong>Access:</strong> Visit the website endpoint in your browser</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <h2>Get in Touch</h2>
+                <p>This is a demonstration project showcasing static website hosting on AWS S3 with Infrastructure as Code.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Static Website Hosting on AWS S3. All rights reserved.</p>
+            <p>Built with Terraform | Hosted on Amazon S3</p>
+        </footer>
+    </div>
+</body>
+</html>
