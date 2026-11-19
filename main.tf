@@ -54,34 +54,7 @@ resource "aws_s3_bucket_public_access_block" "website_public_access_block" {
   restrict_public_buckets = false
 }
 
-# Create bucket policy to allow public read access
-resource "aws_s3_bucket_policy" "website_policy" {
-  bucket = aws_s3_bucket.website_bucket.id
-
-  policy = jsonencode({
-    Version = "2012-10-17"
-    Statement = [
-      {
-        Sid    = "PublicReadGetObject"
-        Effect = "Allow"
-        Principal = {
-          Service = "*"
-        }
-        Action   = "s3:GetObject"
-        Resource = "${aws_s3_bucket.website_bucket.arn}/*"
-        Condition = {
-          StringEquals = {
-            "aws:PrincipalOrgID" = "*"
-          }
-        }
-      }
-    ]
-  })
-
-  depends_on = [aws_s3_bucket_public_access_block.website_public_access_block]
-}
-
-# Alternative: Allow public access to everyone
+# Allow public access to everyone
 resource "aws_s3_bucket_policy" "website_policy_public" {
   bucket = aws_s3_bucket.website_bucket.id
 
